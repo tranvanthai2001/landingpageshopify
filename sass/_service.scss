@@ -1,0 +1,119 @@
+.service {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  &_head {
+    position: relative;
+    background-image: url(/image/download\ 1.png);
+    margin-bottom: 9px;
+    .service_title {
+      font-size: 48px;
+      font-weight: 700;
+      padding: 36px 0 37px 0;
+    }
+    span {
+      position: absolute;
+      width: 385px;
+      height: 7px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      background: linear-gradient(180deg, #54b9db 0%, #6da 100%);
+      bottom: 21px;
+    }
+  }
+  &_body {
+    .body_embrace {
+      display: flex;
+      justify-content: space-between;
+      .service_build {
+        .build_title {
+          color: $third-color;
+          font-size: 40px;
+          font-weight: 700;
+          padding-bottom: 11px;
+        }
+        .build_desc {
+          font-size: 18px;
+          font-weight: 500;
+          width: 466px;
+        }
+      }
+      .service_support {
+        text-align: right;
+        .support_title {
+          color: $third-color;
+          font-size: 40px;
+          font-weight: 700;
+          padding-bottom: 11px;
+        }
+        .support_desc {
+          font-size: 18px;
+          font-weight: 500;
+          width: 466px;
+        }
+      }
+    }
+    .service_image {
+      width: 1192px;
+      height: 351px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .service {
+    padding-left: 10px;
+    padding-right: 10px;
+    &_head {
+      .service_title {
+        font-size: 30px;
+      }
+      span {
+        width: 204.418px;
+      }
+    }
+    .service_body {
+      .body_embrace {
+        flex-direction: column;
+        .service_build {
+          border-top: 1px dashed $third-color;
+          border-bottom: 1px dashed $third-color;
+          padding: 20px 0;
+          .build_title {
+            font-size: 30px;
+          }
+          .build_desc {
+            font-size: 16px;
+            width: 100%;
+          }
+        }
+        .service_support {
+          text-align: left;
+          border-bottom: 1px dashed $third-color;
+          padding: 20px 0;
+          .support_title {
+            font-size: 30px;
+          }
+          .support_desc {
+            font-size: 16px;
+            width: 100%;
+          }
+        }
+      }
+      .service_image {
+        width: 353px;
+        height: 214px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .service {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

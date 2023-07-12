@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LandingFigmaCyber</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preload" as="font" crossorigin="anonymous" type="font/woff2"
+    href=font/ShopifySans--bold.woff2"> <link rel="preload" as="font"
+    crossorigin="anonymous" type="font/woff2"
+    href=font/ShopifySans--extrabold.woff2"> <link rel="preload" as="font"
+    crossorigin="anonymous" type="font/woff2"
+    href=font/ShopifySans--medium.woff2">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <header class="container header">
+      <nav class="nav">
+        <div class="logo">
+          <img src="./image/logo.png" alt="logo" />
+        </div>
+        <div class="nav_menu" id="nav_menu">
+          <ul class="nav_menu_list">
+            <li class="nav_menu_item">
+              <a href="#" class="nav_menu_link">Solutions</a>
+              <svg
+                width="13"
+                height="7"
+                viewBox="0 0 13 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.50003 6.78642C6.42242 6.78649 6.34556 6.77189 6.27387 6.74346C6.20217 6.71502 6.13705 6.67331 6.08226 6.62072L0.173173 0.965398C-0.0577243 0.744416 -0.0577243 0.386576 0.173173 0.165736C0.40407 -0.055104 0.777967 -0.0552454 1.00872 0.165736L6.50003 5.42122L11.9913 0.165736C12.2222 -0.0552454 12.5961 -0.0552454 12.8269 0.165736C13.0576 0.386718 13.0578 0.744558 12.8269 0.965398L6.9178 6.62072C6.863 6.67331 6.79788 6.71502 6.72619 6.74346C6.65449 6.77189 6.57763 6.78649 6.50003 6.78642Z"
+                  fill="black"
+                />
+              </svg>
+            </li>
+            <li class="nav_menu_item">
+              <a href="#" class="nav_menu_link">Our Service</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="#" class="nav_menu_link">Our Service</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="#" class="nav_menu_link">Help Center</a>
+            </li>
+          </ul>
+        </div>
+        <div style="width: 25%; text-align: end">
+          <button class="btn btn-primary">Try it now</button>
+        </div>
+        <button class="btn_close" id="btn_close">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.2391 12.3517L23.171 3.41938C23.7523 2.83837 23.7523 1.89891 23.171 1.31797C22.59 0.736948 21.6506 0.736948 21.0697 1.31797L12.1376 10.2502L3.20578 1.31797C2.6245 0.736948 1.68542 0.736948 1.10442 1.31797C0.523137 1.89898 0.523137 2.83837 1.10442 3.41938L10.0361 12.3517L1.10449 21.2839C0.523206 21.8649 0.523206 22.8043 1.10449 23.3853C1.2423 23.5235 1.40607 23.6331 1.58638 23.7078C1.76669 23.7826 1.95999 23.8209 2.15517 23.8207C2.53554 23.8207 2.91605 23.6751 3.20585 23.3853L12.1376 14.4531L21.0697 23.3853C21.2075 23.5235 21.3713 23.6331 21.5516 23.7078C21.7319 23.7825 21.9252 23.8209 22.1204 23.8207C22.5007 23.8207 22.8812 23.6751 23.171 23.3853C23.7523 22.8043 23.7523 21.8649 23.171 21.2839L14.2391 12.3517Z"
+              fill="black"
+            />
+          </svg>
+        </button>
+        <button class="toggle_btn" id="toggle_btn">
+          <svg
+            width="30"
+            height="24"
+            viewBox="0 0 30 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.64286 13.691H27.9286C28.3643 13.691 28.7822 13.5179 29.0902 13.2098C29.3983 12.9017 29.5714 12.4838 29.5714 12.0481C29.5714 11.6124 29.3983 11.1945 29.0902 10.8864C28.7822 10.5783 28.3643 10.4052 27.9286 10.4052H1.64286C1.20714 10.4052 0.789277 10.5783 0.481182 10.8864C0.173086 11.1945 0 11.6124 0 12.0481C0 12.4838 0.173086 12.9017 0.481182 13.2098C0.789277 13.5179 1.20714 13.691 1.64286 13.691ZM27.9286 0.548096H1.64286C1.20714 0.548096 0.789277 0.721182 0.481182 1.02928C0.173086 1.33737 0 1.75524 0 2.19095C0 2.62667 0.173086 3.04453 0.481182 3.35263C0.789277 3.66072 1.20714 3.83381 1.64286 3.83381H27.9286C28.3643 3.83381 28.7822 3.66072 29.0902 3.35263C29.3983 3.04453 29.5714 2.62667 29.5714 2.19095C29.5714 1.75524 29.3983 1.33737 29.0902 1.02928C28.7822 0.721182 28.3643 0.548096 27.9286 0.548096ZM1.64286 23.5481H27.9286C28.3643 23.5481 28.7822 23.375 29.0902 23.0669C29.3983 22.7588 29.5714 22.341 29.5714 21.9052C29.5714 21.4695 29.3983 21.0517 29.0902 20.7436C28.7822 20.4355 28.3643 20.2624 27.9286 20.2624H1.64286C1.20714 20.2624 0.789277 20.4355 0.481182 20.7436C0.173086 21.0517 0 21.4695 0 21.9052C0 22.341 0.173086 22.7588 0.481182 23.0669C0.789277 23.375 1.20714 23.5481 1.64286 23.5481Z"
+              fill="black"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <section class="wrapper banner">
+      <div
+        class="container"
+        style="
+          display: flex;
+          justify-content: space-between;
+          overflow: hidden;
+          height: 900px;
+        "
+      >
+        <div class="banner_info">
+          <button class="banner_watch">
+            <svg
+              width="12"
+              height="13"
+              viewBox="0 0 12 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.1032 4.98088L2.67747 0.236006C2.40231 0.0790466 2.0904 -0.00236501 1.77348 5.23047e-05C1.45657 0.00246962 1.14594 0.0886297 0.873214 0.249768C0.607509 0.401452 0.38676 0.620631 0.233391 0.885039C0.0800224 1.14945 -0.000500554 1.44966 2.3412e-06 1.75519V11.2449C-0.000500554 11.5505 0.0800224 11.8507 0.233391 12.1151C0.38676 12.3795 0.607509 12.5987 0.873214 12.7504C1.14597 12.9114 1.45658 12.9975 1.77348 12.9999C2.09039 13.0024 2.40228 12.921 2.67747 12.7641L11.1032 8.01925C11.3749 7.86899 11.6014 7.64886 11.7591 7.38171C11.9168 7.11456 12 6.81014 12 6.50006C12 6.18998 11.9168 5.88556 11.7591 5.61841C11.6014 5.35126 11.3749 5.13113 11.1032 4.98088Z"
+                fill="black"
+              />
+            </svg>
+            <span>Watch a video about us</span>
+          </button>
+          <div class="banner_title">
+            <div class="title_problem">
+              <div>Your</div>
+              <div
+                style="
+                  background: linear-gradient(
+                    90deg,
+                    #e9f9f4 0%,
+                    #cfebfe 45.31%,
+                    #f2eefe 100%
+                  );
+                  color: #00a86b;
+                "
+              >
+                Problem
+              </div>
+            </div>
+            <div class="title_our">
+              <div>our</div>
+              <div
+                style="
+                  background: linear-gradient(
+                    90deg,
+                    #e9f9f4 0%,
+                    #cfebfe 45.31%,
+                    #f2eefe 100%
+                  );
+                  color: #00a86b;
+                "
+              >
+                solution
+              </div>
+            </div>
+          </div>
+          <div class="banner_desc">
+            We create applications to help store owners meet their e-commerce
+            needs. Boost your online business operations with the powerful
+            capabilities of solutions from CyberCode.
+          </div>
+          <div class="banner_desc_mobile">
+            Build your business with Shopify to sell online, offline, and
+            everywhere in between.
+          </div>
+          <div class="banner_search">
+            <input type="text" placeholder="Enter your email" />
+            <button class="btn btn-secondary">Try it now</button>
+          </div>
+          <div class="banner_extraPara">
+            With applications from CyberCode, you can use them for free or try
+            them out for 3 days. If you like them, you can support us by opting
+            for monthly payments.
+          </div>
+        </div>
+        <div class="banner_scroll">
+          <div class="scroll_left">
+            <div class="scroll_left_one">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1669631945645-98bf6931f5d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                alt=""
+              />
+            </div>
+            <div class="scroll_left_two">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1669631945645-98bf6931f5d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scroll_right">
+            <div class="scroll_right_one"></div>
+            <div class="scroll_right_two"></div>
+            <div class="scroll_right_three"></div>
+            <div class="scroll_right_four"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container service">
+      <div class="service_head">
+        <h1 class="service_title">What services do we provide?</h1>
+        <span></span>
+      </div>
+      <div class="service_body">
+        <div class="body_embrace">
+          <div class="service_build">
+            <h2 class="build_title">Build additional new features</h2>
+            <p class="build_desc">
+              We will release new features every week, every day, and even every
+              hour
+            </p>
+          </div>
+          <div class="service_support">
+            <h2 class="support_title">24/7/365 Support</h2>
+            <p class="support_desc">
+              We provide 24/7 customer support and assistance whenever you need
+              it
+            </p>
+          </div>
+        </div>
+        <div class="service_image">
+          <img src="/image/grouphouse.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="container card">
+      <h3 class="card_title">The value we bring to customers</h3>
+      <div class="card_all">
+        <div class="card_item">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_4_3)">
+              <path
+                d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z"
+                fill="#E5FDF3"
+              />
+              <path
+                d="M24 41C33.3888 41 41 33.3888 41 24C41 14.6112 33.3888 7 24 7C14.6112 7 7 14.6112 7 24C7 33.3888 14.6112 41 24 41Z"
+                fill="#AEF2D7"
+              />
+              <path
+                d="M24 16.75L31.25 21L24 25.25L16.75 21L24 16.75Z"
+                stroke="#2D7156"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21.25 24L16.75 27L24 31.25L31.25 27L26.6722 24"
+                stroke="#2D7156"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4_3">
+                <rect width="48" height="48" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <h3>Simple</h3>
+          <p>Simplifying complex processes</p>
+        </div>
+        <div class="card_item">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_4_47)">
+              <path
+                d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z"
+                fill="#FEF4F6"
+              />
+              <path
+                d="M24 41C33.3888 41 41 33.3888 41 24C41 14.6112 33.3888 7 24 7C14.6112 7 7 14.6112 7 24C7 33.3888 14.6112 41 24 41Z"
+                fill="#FFE9F1"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20.7464 21.4606C20.7183 21.4315 20.6897 21.4029 20.6607 21.3749C19.3071 20.0686 17.1508 20.107 15.8445 21.4606L15.7763 21.5313C14.4089 22.9482 14.4089 25.1933 15.7763 26.6102C15.8035 26.6384 15.8313 26.6662 15.8596 26.6935C17.1755 27.9634 19.2717 27.9261 20.5416 26.6102L23.1288 23.9293L20.7464 21.4606ZM27.4584 26.6102C28.7283 27.9261 30.8245 27.9634 32.1405 26.6935C32.1687 26.6662 32.1965 26.6384 32.2237 26.6102C33.5911 25.1933 33.5911 22.9482 32.2237 21.5313L32.1555 21.4606C30.8492 20.107 28.6929 20.0686 27.3393 21.3749C27.3103 21.4029 27.2817 21.4315 27.2536 21.4606L24.8713 23.9293L27.4584 26.6102ZM24 22.852L24.9214 21.8972H24.9894L24.9555 21.862L26.2642 20.5058C26.3036 20.4649 26.3437 20.4249 26.3845 20.3854C28.2846 18.5518 31.3113 18.6057 33.1449 20.5058L33.2132 20.5765C35.0946 22.5261 35.0946 25.6154 33.2132 27.565C33.1746 27.605 33.1353 27.6443 33.0953 27.6829C31.2329 29.4802 28.2662 29.4274 26.469 27.565L24.9555 25.9966L24.9894 25.9614H24.9214L24 25.0065L23.0786 25.9614H23.0106L23.0446 25.9966L21.531 27.565C19.7338 29.4274 16.7671 29.4802 14.9048 27.6829C14.8648 27.6443 14.8254 27.605 14.7868 27.565C12.9054 25.6154 12.9054 22.5261 14.7868 20.5765L14.8551 20.5058C16.6887 18.6057 19.7155 18.5518 21.6155 20.3854C21.6563 20.4249 21.6964 20.4649 21.7358 20.5058L23.0446 21.862L23.0106 21.8972H23.0786L24 22.852Z"
+                fill="#F83062"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4_47">
+                <rect width="48" height="48" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <h3>Understanding</h3>
+          <p>Always listening and receiving feedback from customers</p>
+        </div>
+        <div class="card_item">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_4_51)">
+              <path
+                d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z"
+                fill="#F4FAFE"
+              />
+              <path
+                d="M24 41C33.3888 41 41 33.3888 41 24C41 14.6112 33.3888 7 24 7C14.6112 7 7 14.6112 7 24C7 33.3888 14.6112 41 24 41Z"
+                fill="#E9F4FF"
+              />
+              <path
+                d="M23.25 19C23.25 20.2426 22.2426 21.25 21 21.25C19.7574 21.25 18.75 20.2426 18.75 19C18.75 17.7574 19.7574 16.75 21 16.75C22.2426 16.75 23.25 17.7574 23.25 19Z"
+                stroke="#2168F2"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M26.25 21.25C27.4926 21.25 28.75 20.2426 28.75 19C28.75 17.7574 27.4926 16.75 26.25 16.75"
+                stroke="#2168F2"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21 21.75C17.6 21.75 16.75 23.5 16.75 26.25H18.75V29.25C18.75 30.3546 19.6454 31.25 20.75 31.25H21.25C22.3546 31.25 23.25 30.3546 23.25 29.25V26.25H25.25C25.25 23.5 24.4 21.75 21 21.75Z"
+                stroke="#2168F2"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M26.25 21.25C29.65 21.25 30.75 23.5 30.75 26.25H28.75V29.25C28.75 30.3546 27.8546 31.25 26.75 31.25H26.25"
+                stroke="#2168F2"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4_51">
+                <rect width="48" height="48" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <h3>Attentive</h3>
+          <p>Dedicated customer care</p>
+        </div>
+        <div class="card_item">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_4_58)">
+              <path
+                d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z"
+                fill="#FEF6F4"
+              />
+              <path
+                d="M24 41C33.3888 41 41 33.3888 41 24C41 14.6112 33.3888 7 24 7C14.6112 7 7 14.6112 7 24C7 33.3888 14.6112 41 24 41Z"
+                fill="#FFE9E9"
+              />
+              <path
+                d="M27.75 20.75L31.25 24L27.75 27.25M20.25 20.75L16.75 24L20.25 27.25M25.25 17.75L22.75 30.25"
+                stroke="#D73E3E"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4_58">
+                <rect width="48" height="48" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <h3>No Code</h3>
+          <p>Build your store with a simple and user-friendly UI</p>
+        </div>
+        <div class="card_item">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_4_62)">
+              <path
+                d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z"
+                fill="#F7F4FE"
+              />
+              <path
+                d="M24 41C33.3888 41 41 33.3888 41 24C41 14.6112 33.3888 7 24 7C14.6112 7 7 14.6112 7 24C7 33.3888 14.6112 41 24 41Z"
+                fill="#EFE9FF"
+              />
+              <path
+                d="M27.1141 21.3569C26.7589 21.57 26.6438 22.0307 26.8569 22.3859C27.07 22.7411 27.5307 22.8562 27.8859 22.6431L27.1141 21.3569ZM31.25 19.75H32C32 19.4798 31.8547 19.2305 31.6195 19.0974C31.3844 18.9642 31.0958 18.9679 30.8641 19.1069L31.25 19.75ZM31.25 28.25L30.8641 28.8931C31.0958 29.0321 31.3844 29.0358 31.6195 28.9026C31.8547 28.7695 32 28.5202 32 28.25H31.25ZM27.8859 25.3569C27.5307 25.1438 27.07 25.2589 26.8569 25.6141C26.6438 25.9693 26.7589 26.43 27.1141 26.6431L27.8859 25.3569ZM27.8859 22.6431L31.6359 20.3931L30.8641 19.1069L27.1141 21.3569L27.8859 22.6431ZM30.5 19.75V28.25H32V19.75H30.5ZM31.6359 27.6069L27.8859 25.3569L27.1141 26.6431L30.8641 28.8931L31.6359 27.6069ZM18.75 19.5H25.25V18H18.75V19.5ZM26.5 20.75V27.25H28V20.75H26.5ZM25.25 28.5H18.75V30H25.25V28.5ZM17.5 27.25V20.75H16V27.25H17.5ZM18.75 28.5C18.0596 28.5 17.5 27.9404 17.5 27.25H16C16 28.7688 17.2312 30 18.75 30V28.5ZM26.5 27.25C26.5 27.9404 25.9404 28.5 25.25 28.5V30C26.7688 30 28 28.7688 28 27.25H26.5ZM25.25 19.5C25.9404 19.5 26.5 20.0596 26.5 20.75H28C28 19.2312 26.7688 18 25.25 18V19.5ZM18.75 18C17.2312 18 16 19.2312 16 20.75H17.5C17.5 20.0596 18.0596 19.5 18.75 19.5V18Z"
+                fill="#6421F2"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4_62">
+                <rect width="48" height="48" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <h3>Professional</h3>
+          <p>
+            Experienced team with years of building and development expertise
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="container store">
+      <div class="store_way">
+        <h3 class="store_note_desk">Build your store</h3>
+        <h1 class="store_title">Your store, your way</h1>
+        <p class="store_desc">
+          “I recently used Cyberfy, and I was incredibly impressed with the
+          results. The user interface was intuitive and easy to navigate, making
+          the entire process a breeze. The templates provided were modern and
+          professional, allowing me to create a stunning website without any
+          design experience. I highly recommend Cyberfy!”
+        </p>
+        <p class="store_desc_mobile">
+          “We went from burning beans in our garage to needing a 10,000 sq. ft
+          facility to meet customer demand.”
+        </p>
+        <div class="store_info">
+          <p>
+            Koh
+            <span></span>
+            Chuyên viên vận hành sản phẩm
+          </p>
+        </div>
+        <div class="store_arrow">
+          <div>
+            <svg
+              width="17"
+              height="6"
+              viewBox="0 0 17 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.344884 2.40101L16.3431 2.40101C16.5334 2.40101 16.6872 2.53878 16.6872 2.70931C16.6872 2.87983 16.5334 3.0176 16.3431 3.0176L1.17598 3.0176L3.26392 4.88854C3.39832 5.00896 3.39832 5.20454 3.26392 5.32496C3.12953 5.44539 2.91127 5.44539 2.77688 5.32496L0.100825 2.92703C0.0019113 2.8384 -0.0271181 2.70641 0.0266396 2.5908C0.0803972 2.47616 0.20619 2.40101 0.344884 2.40101Z"
+                fill="black"
+              />
+              <path
+                d="M3.02414 0.00018706C3.1123 0.000187065 3.20047 0.030053 3.26712 0.0907479C3.40152 0.211174 3.40152 0.406746 3.26712 0.527173L0.587845 2.92799C0.453451 3.04842 0.235196 3.04842 0.100802 2.92799C-0.033592 2.80756 -0.033592 2.61199 0.100802 2.49157L2.78008 0.0907478C2.84782 0.030053 2.93598 0.000187054 3.02414 0.00018706Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+          <div>
+            <svg
+              width="17"
+              height="6"
+              viewBox="0 0 17 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.3423 3.01451H0.344049C0.153747 3.01451 0 2.87675 0 2.70622C0 2.5357 0.153747 2.39793 0.344049 2.39793H15.5112L13.4233 0.526988C13.2889 0.406562 13.2889 0.21099 13.4233 0.0905638C13.5577 -0.0298624 13.7759 -0.0298624 13.9103 0.0905638L16.5864 2.48849C16.6853 2.57713 16.7143 2.70911 16.6606 2.82472C16.6068 2.93937 16.481 3.01451 16.3423 3.01451Z"
+                fill="black"
+              />
+              <path
+                d="M13.663 5.41534C13.5749 5.41534 13.4867 5.38547 13.42 5.32478C13.2856 5.20435 13.2856 5.00878 13.42 4.88835L16.0993 2.48754C16.2337 2.36711 16.452 2.36711 16.5864 2.48754C16.7208 2.60796 16.7208 2.80354 16.5864 2.92396L13.9071 5.32478C13.8393 5.38547 13.7512 5.41534 13.663 5.41534Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="store_cardRotate">
+        <div class="rotate_pri">
+          <div class="rotate_sec"></div>
+        </div>
+      </div>
+      <h3 class="store_note_mobile">Build your store</h3>
+    </section>
+    <section class="container footer">
+      <div class="footer_info">
+        <div class="footer_logo">
+          <img src="/image/logo.png" alt="" />
+        </div>
+        <div class="info_synthetic">
+          <div class="info_news">
+            <p>Updates & News</p>
+            <p>Support</p>
+            <p>Developers</p>
+          </div>
+          <div class="info_favicon">
+            <p style="padding-bottom: 9px">Products</p>
+            <p>Favicon Animation</p>
+            <p>Favicon Animation</p>
+            <p>Favicon Animation</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer_contact">
+        <div class="contact_text">
+          <p>Terms of Service</p>
+          <p>Privacy Policy</p>
+          <p>Sitemap</p>
+        </div>
+        <div class="contact_logo">
+          <svg
+            width="30"
+            height="31"
+            viewBox="0 0 30 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_4_113)">
+              <path
+                d="M15.6 30.0017V19.4017H20.6V15.0017H15.6V11.9017C15.6 10.9017 16.2 10.0017 16.9 10.0017H20.7V5.60171H16.9C13.8 5.60171 11.3 8.40171 11.3 11.9017V15.0017H7.5V19.4017H11.3V29.5017C4.8 27.9017 0 22.0017 0 15.0017C0 6.70171 6.7 0.00170898 15 0.00170898C23.3 0.00170898 30 6.70171 30 15.0017C30 23.1017 23.6 29.7017 15.6 30.0017Z"
+                fill="black"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4_113">
+                <rect
+                  width="30"
+                  height="30"
+                  fill="white"
+                  transform="translate(0 0.00170898)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+          <svg
+            width="30"
+            height="31"
+            viewBox="0 0 30 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_4_115)">
+              <path
+                d="M30 15.0017C30 23.3017 23.3 30.0017 15 30.0017C6.7 30.0017 0 23.3017 0 15.0017C0 6.70171 6.7 0.00170898 15 0.00170898C23.3 0.00170898 30 6.70171 30 15.0017ZM24.4 15.0017C24.4 8.10171 24.4 8.10171 15 8.10171C5.6 8.10171 5.6 8.10171 5.6 15.0017C5.6 21.9017 5.6 21.9017 15 21.9017C24.4 21.9017 24.4 21.9017 24.4 15.0017ZM12.5 11.3017L18.8 15.1017L12.5 18.9017V11.3017Z"
+                fill="black"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4_115">
+                <rect
+                  width="30"
+                  height="30"
+                  fill="white"
+                  transform="translate(0 0.00170898)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+          <svg
+            width="30"
+            height="31"
+            viewBox="0 0 30 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_4_117)">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15 30.0017C23.2843 30.0017 30 23.286 30 15.0017C30 6.71744 23.2843 0.00170898 15 0.00170898C6.71573 0.00170898 0 6.71744 0 15.0017C0 23.286 6.71573 30.0017 15 30.0017ZM17.9679 11.9387C19.1423 12.766 20.551 13.2093 21.9952 13.2058V10.3855C21.2138 10.3858 20.4497 10.1596 19.7979 9.73536C19.3398 9.44469 18.9467 9.06507 18.6427 8.61973C18.3387 8.17439 18.1302 7.67269 18.0299 7.14531C17.9873 6.90908 17.9669 6.6695 17.9689 6.4296H15.0829V17.7086C15.0829 18.2163 14.92 18.7111 14.6173 19.1223C14.3146 19.5334 13.8877 19.8399 13.3975 19.9979C12.9073 20.156 12.3789 20.1575 11.8878 20.0023C11.3966 19.8471 10.9679 19.5431 10.6627 19.1338C10.3576 18.7244 10.1916 18.2306 10.1886 17.7228C10.1856 17.2151 10.3456 16.7194 10.6458 16.3065C10.946 15.8936 11.3711 15.5847 11.8604 15.4238C12.3496 15.2629 12.878 15.2583 13.37 15.4107V12.5085C12.2944 12.3612 11.1987 12.5407 10.2295 13.023C9.26031 13.5054 8.46383 14.2675 7.94658 15.2075C7.42933 16.1475 7.21597 17.2205 7.33504 18.2831C7.4541 19.3457 7.89992 20.3472 8.61286 21.1536C9.3258 21.96 10.2719 22.5329 11.3246 22.7957C12.3772 23.0585 13.4863 22.9987 14.5035 22.6242C15.5207 22.2496 16.3975 21.5783 17.0166 20.7C17.6357 19.8217 17.9676 18.7783 17.9679 17.7092V11.9387Z"
+                fill="black"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4_117">
+                <rect
+                  width="30"
+                  height="30"
+                  fill="white"
+                  transform="translate(0 0.00170898)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="/js/script.js"></script>
+  <script>
+    const scrollAnimation = ScrollReveal({
+      origin: "top",
+      distance: "10px",
+      duration: 1500,
+      delay: 100,
+    });
+
+    scrollAnimation.reveal(".header");
+    scrollAnimation.reveal(".banner", { delay: 500 });
+    scrollAnimation.reveal(".service", { delay: 600 });
+    scrollAnimation.reveal(".card", { delay: 600 });
+    scrollAnimation.reveal(".store", { delay: 700 });
+    scrollAnimation.reveal(".footer", { delay: 700 });
+  </script>
+</html>
