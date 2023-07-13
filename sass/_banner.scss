@@ -359,9 +359,14 @@
     }
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199.98px) { 
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
   .banner {
     padding-left: 10px;
     padding-right: 10px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .banner {
+    opacity: 1 !important;
   }
 }

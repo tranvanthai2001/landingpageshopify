@@ -32,23 +32,19 @@
     }
   }
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1199px) {
   .card {
     padding-left: 10px;
     padding-right: 10px;
     .card_all {
-      overflow-x: auto;
-      overflow-y: hidden;
-    }
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .card {
-    padding-left: 10px;
-    padding-right: 10px;
-    .card_all {
-      overflow-x: auto;
-      overflow-y: hidden;
+      // overflow-x: auto;
+      // overflow-y: hidden;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      .card_item {
+        scroll-snap-align: start;
+      }
     }
   }
 }

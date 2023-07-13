@@ -98,13 +98,16 @@ body {
   z-index: 4;
   display: none;
 }
+.header .nav .toggle_btn {
+  padding-right: 16px;
+}
 .header .nav .btn {
   font-size: 16px;
   text-decoration-line: underline;
 }
 
 @media screen and (max-width: 576px) {
-  .btn {
+  .btn-primary {
     display: none;
   }
 }
@@ -144,14 +147,15 @@ body {
     top: 100%;
     right: 110%;
     transition: 0.4s;
-    background: #222121;
+    background: #fff;
     border-top: 1px solid black;
-    z-index: 99999;
+    z-index: 9999;
   }
   .header .nav_menu .nav_menu_list {
     position: absolute;
     margin-top: 30px;
     flex-direction: column;
+    margin-left: -20px;
     gap: 40px;
   }
   .header .btn {
@@ -160,6 +164,12 @@ body {
   .header .btn_close {
     position: absolute;
     right: 16px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .header {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 .show {
@@ -511,6 +521,11 @@ body {
     padding-right: 10px;
   }
 }
+@media screen and (min-width: 992px) {
+  .banner {
+    opacity: 1 !important;
+  }
+}
 .service {
   margin-top: 25px;
   margin-bottom: 50px;
@@ -656,24 +671,17 @@ body {
   flex-shrink: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .card {
     padding-left: 10px;
     padding-right: 10px;
   }
   .card .card_all {
-    overflow-x: auto;
-    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
   }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .card {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .card .card_all {
-    overflow-x: auto;
-    overflow-y: hidden;
+  .card .card_all .card_item {
+    scroll-snap-align: start;
   }
 }
 .store {

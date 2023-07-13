@@ -28,6 +28,9 @@
       z-index: 4;
       display: none;
     }
+    .toggle_btn {
+      padding-right: 16px;
+    }
     .btn {
       font-size: 16px;
       text-decoration-line: underline;
@@ -37,7 +40,9 @@
 
 @media screen and (max-width: 576px) {
   .btn {
-    display: none;
+    &-primary {
+      display: none;
+    }
   }
 }
 @media screen and (min-width: 991px) {
@@ -74,13 +79,14 @@
       top: 100%;
       right: 110%;
       transition: 0.4s;
-      background: #222121;
+      background: $four-color;
       border-top: 1px solid black;
-      z-index: 99999;
+      z-index: 9999;
       .nav_menu_list {
         position: absolute;
         margin-top: 30px;
         flex-direction: column;
+        margin-left: -20px;
         gap: 40px;
       }
     }
@@ -93,7 +99,12 @@
     }
   }
 }
-
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 .show {
   right: 0% !important;
 }
