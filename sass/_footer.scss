@@ -81,3 +81,13 @@
     padding-right: 10px;
   }
 }
+@media screen and (max-width: 372px) {
+  .footer {
+    .footer_info {
+      .footer_logo {
+        width: 150px !important;
+        padding-right: 20px;
+      }
+    }
+  }
+}
